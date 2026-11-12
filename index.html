@@ -602,6 +602,10 @@ const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': 
 const plain = s => String(s ?? '').replace(/\*/g, '').replace(/\s*\|\s*/g, ' ');
 const rich = s => esc(s).replace(/\s*\|\s*/g, ' ').replace(/\*([^*]+)\*/g, '<span class="acc">$1</span>');
 const arr = v => Array.isArray(v) ? v : [];
+/* version tag for local photos: change ASSET_V to force every browser to fetch photos fresh */
+const ASSET_V = '2';
+const A = s => { s = String(s ?? ''); return /^(\.\/)?assets\//.test(s) && !s.includes('?') ? s + '?v=' + ASSET_V : s; };
+const img = s => esc(A(s));
 let C = null;
 const BC = window.BC = { get content() { return C; } };
 
@@ -635,7 +639,7 @@ function mark(cls = '') {
   return `<svg class="mark ${cls}" viewBox="0 0 120 64" aria-hidden="true"><defs><linearGradient id="${u}n" x1="0" y1="0" x2="1" y2="1"><stop offset="0" style="stop-color:var(--mark-n1)"/><stop offset="1" style="stop-color:var(--mark-n2)"/></linearGradient><linearGradient id="${u}g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9A6A1A"/><stop offset=".38" stop-color="#F4D27C"/><stop offset=".7" stop-color="#C08A2E"/><stop offset="1" stop-color="#F6DA8C"/></linearGradient></defs><path class="mk-n" d="M47.4 18.6A19 19 0 1 0 47.4 45.4" stroke="url(#${u}n)"/><path class="mk-g" d="M36 49.5C52 49 60 13 86 13A19 19 0 1 1 72.6 45.4" stroke="url(#${u}g)"/></svg>`;
 }
 const logoInner = () => C.brand.logoImage
-  ? `<img src="${esc(C.brand.logoImage)}" alt="${esc(C.brand.name)}">`
+  ? `<img src="${img(C.brand.logoImage)}" alt="${esc(C.brand.name)}">`
   : `${mark()}<span class="wm"><b>${esc(C.brand.wordmarkTop)}</b><i>${esc(C.brand.wordmarkBottom)}</i></span>`;
 
 /* ---------- text helpers ---------- */
@@ -734,7 +738,7 @@ H.hero = () => {
       ${h.videoUrl ? `<button class="btn btn-ghost play-btn" data-video="${esc(h.videoUrl)}"><span class="pb">${icon('play')}</span>${esc(h.videoButton || 'Play video')}</button>` : ''}
     </div>
   </div>
-  <div class="wall" aria-hidden="true"><div class="ring">${imgs.map((src, i) => `<div class="panel lights" style="--i:${i - mid};--d:${Math.abs(i - mid)}"><img src="${esc(src)}" alt="" decoding="async"${Math.abs(i - mid) > 2.5 ? ' fetchpriority="low"' : ''}></div>`).join('')}</div></div>
+  <div class="wall" aria-hidden="true"><div class="ring">${imgs.map((src, i) => `<div class="panel lights" style="--i:${i - mid};--d:${Math.abs(i - mid)}"><img src="${img(src)}" alt="" decoding="async"${Math.abs(i - mid) > 2.5 ? ' fetchpriority="low"' : ''}></div>`).join('')}</div></div>
   <div class="container"><div class="stats">${arr(C.stats).map((s, i) => `<div class="stat hero-fade" style="--d:${i}"><b data-count="${Number(s.value) || 0}" data-suffix="${esc(s.suffix || '')}">${fmt(Number(s.value) || 0)}${esc(s.suffix || '')}</b><span>${esc(s.label)}</span></div>`).join('')}</div></div>
 </section>`;
 };
@@ -754,7 +758,7 @@ H.about = () => {
       <div class="industries" data-r><span class="ind-t">${esc(a.industriesTitle)}</span>${arr(a.industries).map(x => `<span class="chip">${esc(x)}</span>`).join('')}</div>
     </div>
   </div>
-  <div class="about-photos">${arr(a.images).slice(0, 3).map((src, i) => `<figure class="rv-img" style="--d:${i}" data-px="${[0.05, -0.04, 0.08][i]}"><img src="${esc(src)}" alt="${esc(altFor(src))}" loading="lazy" decoding="async"></figure>`).join('')}</div>
+  <div class="about-photos">${arr(a.images).slice(0, 3).map((src, i) => `<figure class="rv-img" style="--d:${i}" data-px="${[0.05, -0.04, 0.08][i]}"><img src="${img(src)}" alt="${esc(altFor(src))}" loading="lazy" decoding="async"></figure>`).join('')}</div>
   <div class="points">${arr(a.points).map((p, i) => `<article class="point" data-r style="--d:${i}"><span class="pi">${icon(p.icon)}</span><h3>${esc(p.title)}</h3><p>${rich(p.text)}</p></article>`).join('')}</div>
   ${C.brand.groupLine ? `<p class="group-line" data-r>${mark()}<span>${esc(C.brand.groupLine)}</span></p>` : ''}
 </div></section>`;
@@ -772,7 +776,7 @@ H.services = () => {
       <div class="s-foot"><div class="s-specs">${arr(it.specs).map(p => `<div class="spec"><b>${esc(p.value)}</b><span>${esc(p.label)}</span></div>`).join('')}</div>
       <button class="btn ${i % 5 === 2 ? 'btn-dark' : 'btn-gold'} sm" data-contact="enquiry" data-interest="${esc(plain(it.title))}">Enquire${icon('arrow')}</button></div>
     </div>
-    <div class="s-media">${it.image ? `<img src="${esc(it.image)}" alt="${esc(plain(it.title))}" loading="lazy" decoding="async">` : ''}${it.demo ? '<span class="tag">Demo visual</span>' : ''}</div>
+    <div class="s-media">${it.image ? `<img src="${img(it.image)}" alt="${esc(plain(it.title))}" loading="lazy" decoding="async">` : ''}${it.demo ? '<span class="tag">Demo visual</span>' : ''}</div>
   </div></article>`).join('')}</div>
 </div></section>`;
 };
@@ -819,8 +823,8 @@ function altFor(src) {
   return it ? `${it.title}, ${it.location}` : C.brand.name + ' advertising media';
 }
 const card = (it, k) => `<article class="w-card tilt${k >= 6 ? ' extra' : ''}" data-cursor="View">
-  <div class="w-img"><img src="${esc(it.thumb || arr(it.gallery)[0] || '')}" alt="${esc(it.title)}, ${esc(it.location)}" loading="lazy" decoding="async">${it.demo ? '<span class="tag">Demo visual</span>' : ''}${arr(it.gallery).length > 1 ? `<span class="tag count">${icon('images')}${arr(it.gallery).length}</span>` : ''}${it.video ? `<span class="w-play">${icon('play')}</span>` : ''}</div>
-  <div class="w-body">${it.logo ? `<img class="w-logo" src="${esc(it.logo)}" alt="">` : ''}<h4><button class="w-btn" data-item="${esc(it.id)}">${esc(it.title)}</button></h4><p class="loc">${icon('pin')}<span>${esc(it.location)}</span></p>${it.size ? `<span class="size">${esc(it.size)}</span>` : ''}</div>
+  <div class="w-img"><img src="${img(it.thumb || arr(it.gallery)[0] || '')}" alt="${esc(it.title)}, ${esc(it.location)}" loading="lazy" decoding="async">${it.demo ? '<span class="tag">Demo visual</span>' : ''}${arr(it.gallery).length > 1 ? `<span class="tag count">${icon('images')}${arr(it.gallery).length}</span>` : ''}${it.video ? `<span class="w-play">${icon('play')}</span>` : ''}</div>
+  <div class="w-body">${it.logo ? `<img class="w-logo" src="${img(it.logo)}" alt="">` : ''}<h4><button class="w-btn" data-item="${esc(it.id)}">${esc(it.title)}</button></h4><p class="loc">${icon('pin')}<span>${esc(it.location)}</span></p>${it.size ? `<span class="size">${esc(it.size)}</span>` : ''}</div>
 </article>`;
 H.showcase = () => {
   const s = C.showcase, items = arr(s.items);
@@ -855,7 +859,7 @@ H.team = () => {
   return `<section class="sec team light" id="team" aria-labelledby="tt-t"><div class="container">
   <p class="eyebrow" data-r>${esc(t.eyebrow)}</p><h2 class="display hdg" id="tt-t">${wr(t.title)}</h2>
   <div class="team-grid">
-    <div class="people">${arr(t.people).map((p, i) => `<article class="person" data-r style="--d:${i}"><div class="avatar">${p.photo ? `<img src="${esc(p.photo)}" alt="${esc(p.name)}" loading="lazy">` : `<span>${esc(initials(p.name))}</span>`}</div><div>${p.quote ? `<blockquote>“${esc(p.quote)}”</blockquote>` : ''}<b>${esc(p.name)}</b><span class="role">${esc(p.role)}</span></div></article>`).join('')}</div>
+    <div class="people">${arr(t.people).map((p, i) => `<article class="person" data-r style="--d:${i}"><div class="avatar">${p.photo ? `<img src="${img(p.photo)}" alt="${esc(p.name)}" loading="lazy">` : `<span>${esc(initials(p.name))}</span>`}</div><div>${p.quote ? `<blockquote>“${esc(p.quote)}”</blockquote>` : ''}<b>${esc(p.name)}</b><span class="role">${esc(p.role)}</span></div></article>`).join('')}</div>
     ${arr(t.group).length ? `<div class="group-card" data-r style="--d:1"><h3>${esc(t.groupTitle)}</h3><ul>${arr(t.group).map(g => `<li>${mark()}<span>${esc(g.name)}</span></li>`).join('')}</ul><p>${esc(C.brand.tagline)}</p></div>` : ''}
   </div>
 </div></section>`;
@@ -1271,9 +1275,9 @@ function videoEmbed(url) {
 const openVideo = url => openModal(videoEmbed(url), { cls: 'vid', label: 'Video player' });
 function openItem(id) {
   const it = arr(C.showcase.items).find(x => x.id === id); if (!it) return;
-  const imgs = (arr(it.gallery).length ? arr(it.gallery) : [it.thumb]).filter(Boolean); let k = 0;
+  const imgs = (arr(it.gallery).length ? arr(it.gallery) : [it.thumb]).filter(Boolean).map(A); let k = 0;
   const m = openModal(`<div class="lb-stage"><img alt=""><span class="lb-count"></span>${it.demo ? '<span class="tag">Demo visual</span>' : ''}${imgs.length > 1 ? `<button class="lb-nav prev" aria-label="Previous photo">${icon('chevL')}</button><button class="lb-nav next" aria-label="Next photo">${icon('chevR')}</button>` : ''}</div>
-  <div class="lb-info">${it.logo ? `<img class="w-logo" src="${esc(it.logo)}" alt="">` : ''}<p class="eyebrow">${esc(catName(it.category))}</p><h3>${esc(it.title)}</h3><p class="loc">${icon('pin')}<span>${esc(it.location)}</span></p>${it.size ? `<span class="size">${esc(it.size)}</span>` : ''}<p class="txt">${rich(it.text)}</p>
+  <div class="lb-info">${it.logo ? `<img class="w-logo" src="${img(it.logo)}" alt="">` : ''}<p class="eyebrow">${esc(catName(it.category))}</p><h3>${esc(it.title)}</h3><p class="loc">${icon('pin')}<span>${esc(it.location)}</span></p>${it.size ? `<span class="size">${esc(it.size)}</span>` : ''}<p class="txt">${rich(it.text)}</p>
   <div class="lb-actions"><button class="btn btn-gold sm" data-contact="enquiry" data-interest="${esc(it.title)}">Enquire about this${icon('arrow')}</button>${it.video ? `<button class="btn btn-ghost sm" data-video="${esc(it.video)}">${icon('play')}Play video</button>` : ''}${it.link ? `<a class="btn btn-ghost sm" href="${esc(it.link)}" target="_blank" rel="noopener">${icon('external')}Open link</a>` : ''}</div></div>`, { cls: 'lb', label: it.title });
   const img = $('.lb-stage img', m), cnt = $('.lb-count', m);
   const show = i => { k = (i + imgs.length) % imgs.length; img.style.opacity = 0; const s = imgs[k]; const pre = new Image(); pre.onload = pre.onerror = () => { img.src = s; img.alt = `${it.title} – photo ${k + 1} of ${imgs.length}`; img.style.opacity = 1; }; pre.src = s; cnt.textContent = `${k + 1} / ${imgs.length}`; cnt.hidden = imgs.length < 2; };
@@ -1787,6 +1791,13 @@ function mergeMissing(dst, src) {
     for (const k in src) { if (k === 'admin' || k === 'meta') continue; if (!(k in dst)) dst[k] = clone(src[k]); else mergeMissing(dst[k], src[k]); }
   }
 }
+async function checkAssets() {
+  const paths = new Set();
+  (function walk(v) { if (typeof v === 'string') { if (/^(\.\/)?assets\//.test(v)) paths.add(v.split('?')[0]); } else if (v && typeof v === 'object') Object.values(v).forEach(walk); })(draft);
+  const missing = [];
+  await Promise.all([...paths].map(async p => { try { const r = await fetch(p + '?check=' + Date.now(), { method: 'HEAD', cache: 'no-store' }); if (!r.ok) missing.push(p); } catch (e) { missing.push(p); } }));
+  return { total: paths.size, missing: missing.sort() };
+}
 async function refreshLive() { try { const r = await fetch('content.json?t=' + Date.now(), { cache: 'no-store' }); if (r.ok) live = await r.json(); } catch (e) { } return live; }
 function saveFile(obj, name) {
   const blob = new Blob([JSON.stringify(obj, null, 2)], { type: 'application/json' });
@@ -1968,7 +1979,13 @@ BC.openAdmin = async () => {
   mount(); BC.rerender(draft);
   if (restoredNote) banner(restoredNote);
   if (restoredNote && liveMovedSince()) banner(restoredNote + '<br><b>Note:</b> the live site changed since this draft was made. Use ⋯ → Add items from live site before publishing.');
-  setStatus('Editing draft. Changes are saved on this device until you publish.');
+  setStatus('Checking that every photo is on the server…');
+  const chk = await checkAssets();
+  if (chk.missing.length) {
+    const cur = $('.adm-banner').classList.contains('show') ? $('.adm-banner').innerHTML + '<br>' : '';
+    banner(cur + `<b>⚠ ${chk.missing.length} of ${chk.total} photos are missing on the live site.</b> Upload these files to GitHub into the <b>assets/img</b> folder: <span style="word-break:break-all">${chk.missing.slice(0, 15).map(p => esc(p.split('/').pop())).join(', ')}${chk.missing.length > 15 ? ` …and ${chk.missing.length - 15} more` : ''}</span>`);
+    setStatus(`${chk.missing.length} photo file(s) missing on the server`, true);
+  } else setStatus(`All ${chk.total} photos found on the server. Changes are saved on this device until you publish.`);
 };
 })();
 </script>

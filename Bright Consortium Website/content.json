@@ -1,0 +1,365 @@
+{
+  "meta": {
+    "version": 1,
+    "updated": "2026-11-12T00:00:00.000Z"
+  },
+  "brand": {
+    "name": "Bright Consortium Ltd.",
+    "wordmarkTop": "BRIGHT",
+    "wordmarkBottom": "CONSORTIUM LTD.",
+    "tagline": "Together we achieve more",
+    "subTagline": "Building value for a brighter tomorrow",
+    "logoImage": "",
+    "groupLine": "A consortium of SHAKHAOUTH Enterprise, ALAM Enterprise and M A Enterprise"
+  },
+  "theme": {
+    "navyColor": "#0A1B3D",
+    "deepColor": "#050D20",
+    "goldColor": "#D4A84B",
+    "goldLightColor": "#F2D38A",
+    "creamColor": "#F4F0E6",
+    "inkColor": "#0B1226",
+    "fontDisplay": "Anton",
+    "fontSerif": "Instrument Serif",
+    "fontBody": "Manrope"
+  },
+  "seo": {
+    "title": "Bright Consortium Ltd. | Railway LED, Billboards & Train Branding in Bangladesh",
+    "description": "Train-schedule LED screens at 10 Bangladesh Railway stations, outdoor LED screens and illuminated billboards in Dhaka and Chattogram, highway billboards, and train body and seat-cover branding.",
+    "keywords": "LED advertising Bangladesh, railway station LED, billboard Dhaka, billboard Chattogram, train branding, train wrap, seat cover branding, outdoor advertising Bangladesh",
+    "ogImage": "assets/og-image.jpg",
+    "siteUrl": ""
+  },
+  "nav": [
+    { "id": "n1", "label": "Media", "target": "#services" },
+    { "id": "n2", "label": "Coverage", "target": "#coverage" },
+    { "id": "n3", "label": "Showcase", "target": "#showcase" },
+    { "id": "n4", "label": "Process", "target": "#process" },
+    { "id": "n5", "label": "Contact", "target": "#contact" }
+  ],
+  "hero": {
+    "badge": "Ready to display · 1-year rental · Nationwide",
+    "titleLines": ["Be seen", "*everywhere*", "Bangladesh moves."],
+    "text": "Train-schedule LED screens at 10 major railway stations, LED screens and illuminated billboards across Dhaka and Chattogram, highway billboards and full train branding: one partner, lit 24/7.",
+    "primaryButton": "Get a quote",
+    "secondaryButton": "Explore media",
+    "secondaryTarget": "#services",
+    "videoUrl": "",
+    "videoButton": "Play showreel",
+    "wallImages": [
+      "assets/img/seat-covers.webp",
+      "assets/img/bb-army-golf-club.webp",
+      "assets/img/station-5.webp",
+      "assets/img/train-6.webp",
+      "assets/img/city-ctg-tiger-pass-night.webp",
+      "assets/img/station-3.webp",
+      "assets/img/bb-banani-expressway.webp",
+      "assets/img/city-airport-road.webp",
+      "assets/img/hw-ibrahimabad-3.webp"
+    ]
+  },
+  "stats": [
+    { "id": "s1", "value": 10, "suffix": "", "label": "Major railway stations" },
+    { "id": "s2", "value": 50, "suffix": "", "label": "Station LED screens" },
+    { "id": "s3", "value": 44, "suffix": "", "label": "Billboards & light boxes" },
+    { "id": "s4", "value": 2000, "suffix": "", "label": "Branded train seat covers" }
+  ],
+  "marquee": [
+    "Station LED screens",
+    "City LED screens",
+    "Illuminated billboards",
+    "Highway billboards",
+    "Train body branding",
+    "Seat cover branding"
+  ],
+  "about": {
+    "eyebrow": "Who we are",
+    "statement": "Bright Consortium connects brands with *millions of people every day*: on railway platforms, inside and outside trains, and along the busiest roads of Dhaka, Chattogram and the national highways.",
+    "text": "Bangladesh Railway is one of the country's largest transport networks, linking key commercial and economic corridors. We place premium illuminated advertising where those journeys happen, so your brand earns strong recall and long-term impact.",
+    "groupTitle": "The consortium",
+    "points": [
+      { "id": "p1", "icon": "sun", "title": "Lit 24/7", "text": "Premium illuminated formats that stay visible day and night." },
+      { "id": "p2", "icon": "pin", "title": "Strategic placement", "text": "Entrances, platforms, ticket counters, parking areas and terminal zones." },
+      { "id": "p3", "icon": "users", "title": "Massive exposure", "text": "Commuters, travellers, professionals, retailers, tourists and daily passengers." },
+      { "id": "p4", "icon": "route", "title": "Nationwide reach", "text": "Major railway routes, city junctions and national highways." }
+    ],
+    "industriesTitle": "Built for",
+    "industries": ["FMCG", "Healthcare", "Pharmaceuticals", "Consumer products", "Retail", "Electronics", "Telecom", "Corporate"],
+    "images": [
+      "assets/img/station-8.webp",
+      "assets/img/city-ctg-tiger-pass-night.webp",
+      "assets/img/train-2.webp"
+    ]
+  },
+  "services": {
+    "eyebrow": "What we offer",
+    "title": "Five ways to be *seen.*",
+    "text": "Pick one format or combine them into a nationwide campaign. Every option is offered on a one-year rental basis.",
+    "items": [
+      {
+        "id": "svc-station",
+        "title": "Train schedule + advertising LED",
+        "kicker": "Bangladesh Railway stations",
+        "text": "LED screens that show the live train timetable alongside your ads, so passengers keep looking. Placed at entrances, concourses, ticket counters and platforms.",
+        "features": [
+          "About 8 large and 42 small LED screens",
+          "10 major stations including Kamalapur, Airport, Chattogram and Cox's Bazar",
+          "Peak (12 hours) and off-peak (4 hours) slots",
+          "Ready to display"
+        ],
+        "specs": [
+          { "id": "a1", "label": "Stations", "value": "10" },
+          { "id": "a2", "label": "Screens", "value": "50" },
+          { "id": "a3", "label": "Visibility", "value": "24/7" }
+        ],
+        "image": "assets/img/station-3.webp",
+        "demo": true
+      },
+      {
+        "id": "svc-city",
+        "title": "Outdoor LED screens",
+        "kicker": "Dhaka & Chattogram",
+        "text": "Large LED screens at high-traffic junctions: Airport Road, Khilkhet, Banani, Kamalapur, and Chattogram's New Market, Tiger Pass and Lalkhan Bazar.",
+        "features": [
+          "Peak hours 7am–1pm and 5pm–11pm",
+          "Off-peak hours 1pm–5pm",
+          "Video loops planned with you",
+          "Maintenance materials provided by us"
+        ],
+        "specs": [
+          { "id": "b1", "label": "Cities", "value": "2" },
+          { "id": "b2", "label": "Peak hours", "value": "12" },
+          { "id": "b3", "label": "Format", "value": "LED" }
+        ],
+        "image": "assets/img/city-airport-road.webp",
+        "demo": false
+      },
+      {
+        "id": "svc-billboard",
+        "title": "Illuminated billboards",
+        "kicker": "City & highway",
+        "text": "Landmark billboards along Airport Road, Kuril, Banani and Chattogram, plus highway sites on the Dhaka–Sirajganj, Dhaka–Natore and Dhaka–Rangpur routes.",
+        "features": [
+          "Sizes from 6 × 8 ft light boxes to 50 × 10 ft boards",
+          "Most boards 30 × 20 ft (600 sq ft)",
+          "Both-direction facings on key highways",
+          "16 light boxes from Tiger Pass to Lalkhan Bazar"
+        ],
+        "specs": [
+          { "id": "c1", "label": "Billboards", "value": "28" },
+          { "id": "c2", "label": "Light boxes", "value": "16" },
+          { "id": "c3", "label": "Largest", "value": "50×10 ft" }
+        ],
+        "image": "assets/img/bb-banani-expressway.webp",
+        "demo": false
+      },
+      {
+        "id": "svc-train",
+        "title": "Train body branding",
+        "kicker": "Commuter & mail trains",
+        "text": "Turn whole trains into moving billboards. Selected for high passenger volume, maximum station coverage, daily operation and wide geographic reach.",
+        "features": [
+          "Complete outside body branding",
+          "Premium outdoor-grade vinyl, high-resolution print",
+          "Surface preparation and professional installation",
+          "6-month warranty on stickers"
+        ],
+        "specs": [
+          { "id": "d1", "label": "Train bodies", "value": "10–15" },
+          { "id": "d2", "label": "Routes", "value": "Any" },
+          { "id": "d3", "label": "Warranty", "value": "6 months" }
+        ],
+        "image": "assets/img/train-6.webp",
+        "demo": true
+      },
+      {
+        "id": "svc-seat",
+        "title": "Seat cover & seat-back branding",
+        "kicker": "Inside the train",
+        "text": "Your brand in front of every seated passenger for the whole journey. We clean, maintain and replace the branded covers and stickers throughout the contract.",
+        "features": [
+          "2,000 branded seat covers",
+          "1,000 seat-back stickers (about 1.6 ft × 8 in)",
+          "Covers washed and refitted four times a month",
+          "Damaged stickers replaced at no extra charge"
+        ],
+        "specs": [
+          { "id": "e1", "label": "Seat covers", "value": "2,000" },
+          { "id": "e2", "label": "Stickers", "value": "1,000" },
+          { "id": "e3", "label": "Washes", "value": "4 / month" }
+        ],
+        "image": "assets/img/seat-covers.webp",
+        "demo": true
+      }
+    ]
+  },
+  "coverage": {
+    "eyebrow": "Coverage",
+    "title": "On the tracks.|On the roads.|*Across the nation.*",
+    "text": "Our media follows the routes millions travel every day. Tap a point on the map to see what's there.",
+    "mapNote": "Schematic map, not to scale",
+    "legend": [
+      { "id": "station", "label": "Railway station LED" },
+      { "id": "city", "label": "City LED & billboards" },
+      { "id": "highway", "label": "Highway billboards" }
+    ],
+    "nodes": [
+      { "id": "kamalapur", "name": "Kamalapur", "type": "station", "x": 51, "y": 64, "label": "left", "note": "Railway station LED screens" },
+      { "id": "airport", "name": "Airport", "type": "station", "x": 49.5, "y": 56.5, "label": "left", "note": "Railway station LED screens and station-front billboards" },
+      { "id": "narsingdi", "name": "Narsingdi", "type": "station", "x": 58, "y": 55, "label": "top", "note": "Railway station LED screens" },
+      { "id": "bbaria", "name": "Brahmanbaria", "type": "station", "x": 66, "y": 56, "label": "right", "note": "Railway station LED screens" },
+      { "id": "sylhet", "name": "Sylhet", "type": "station", "x": 82, "y": 35, "label": "top", "note": "Railway station LED screens" },
+      { "id": "mymensingh", "name": "Mymensingh", "type": "station", "x": 49, "y": 39, "label": "right", "note": "Railway station LED screens" },
+      { "id": "chattogram", "name": "Chattogram", "type": "station", "x": 79, "y": 88, "label": "left", "note": "Railway station LED screens" },
+      { "id": "coxsbazar", "name": "Cox's Bazar", "type": "station", "x": 84, "y": 106, "label": "right", "note": "Railway station LED screens" },
+      { "id": "rajshahi", "name": "Rajshahi", "type": "station", "x": 12, "y": 50, "label": "bottom", "note": "Railway station LED screens" },
+      { "id": "khulna", "name": "Khulna", "type": "station", "x": 31, "y": 81, "label": "bottom", "note": "Railway station LED screens" },
+      { "id": "dhaka-city", "name": "Dhaka city", "type": "city", "x": 53.5, "y": 60, "label": "right", "note": "LED screens at Airport Road, Khilkhet, Banani DOHS, Shoinik Club and Kamalapur, plus billboards at Radisson Blu, Le Méridien, Third Terminal, Army Golf Club, Kuril and Banani" },
+      { "id": "ctg-city", "name": "Chattogram city", "type": "city", "x": 82, "y": 85, "label": "right", "note": "LED screens at New Market, Tiger Pass and Lalkhan Bazar, a Tiger Pass billboard and 16 light boxes" },
+      { "id": "jamuna", "name": "Jamuna Bridge", "type": "highway", "x": 40, "y": 45, "label": "right", "note": "Dhaka–Sirajganj highway (Elenga–Ibrahimabad) and Ibrahimabad Railway Station, both facings" },
+      { "id": "ullapara", "name": "Ullapara", "type": "highway", "x": 31, "y": 43, "label": "top", "note": "Ullapara rail crossing, Dhaka–Rangpur highway" },
+      { "id": "natore", "name": "Natore", "type": "highway", "x": 20, "y": 39.5, "label": "top", "note": "Dhaka–Natore highway, both facings" },
+      { "id": "rangpur", "name": "Rangpur", "type": "highway", "x": 26, "y": 17, "label": "right", "note": "Dhaka–Rangpur highway, both facings" },
+      { "id": "joydebpur", "name": "", "type": "junction", "x": 49.5, "y": 50, "label": "none", "note": "" },
+      { "id": "ishwardi", "name": "", "type": "junction", "x": 22, "y": 54, "label": "none", "note": "" },
+      { "id": "laksam", "name": "", "type": "junction", "x": 71, "y": 73, "label": "none", "note": "" },
+      { "id": "bogura", "name": "", "type": "junction", "x": 30, "y": 30, "label": "none", "note": "" }
+    ],
+    "railLines": [
+      "mymensingh, joydebpur, airport, kamalapur",
+      "airport, narsingdi, bbaria, sylhet",
+      "bbaria, laksam, chattogram, coxsbazar",
+      "joydebpur, jamuna, ishwardi, rajshahi",
+      "ishwardi, khulna"
+    ],
+    "roadLines": [
+      "joydebpur, jamuna, ullapara, natore",
+      "ullapara, bogura, rangpur"
+    ],
+    "columns": [
+      {
+        "id": "col1",
+        "title": "Railway stations",
+        "items": ["Kamalapur", "Airport (Uttara)", "Cox's Bazar", "Chattogram", "Sylhet", "Brahmanbaria", "Narsingdi", "Mymensingh", "Khulna", "Rajshahi"]
+      },
+      {
+        "id": "col2",
+        "title": "City junctions",
+        "items": ["Airport Road, Uttara", "Khilkhet", "Banani DOHS", "Shoinik Club rail crossing", "Kamalapur Stadium", "Kuril (BRTC counter)", "Chattogram New Market", "Tiger Pass, Chattogram", "Lalkhan Bazar, Chattogram"]
+      },
+      {
+        "id": "col3",
+        "title": "Highways",
+        "items": ["Dhaka–Sirajganj (Elenga–Ibrahimabad)", "Ibrahimabad Railway Station", "Dhaka–Natore", "Dhaka–Rangpur", "Ullapara rail crossing"]
+      }
+    ]
+  },
+  "showcase": {
+    "eyebrow": "Showcase",
+    "title": "See it *in place.*",
+    "text": "Browse our sites and formats. Tap any card to open the photos.",
+    "note": "Advertising creatives shown in photos are demo visuals for illustration only and do not show client relationships.",
+    "allLabel": "All media",
+    "categories": [
+      { "id": "station", "name": "Station LED" },
+      { "id": "city", "name": "City LED" },
+      { "id": "billboard", "name": "City billboards" },
+      { "id": "highway", "name": "Highway billboards" },
+      { "id": "train", "name": "Train branding" }
+    ],
+    "items": [
+      { "id": "w-st-1", "category": "station", "title": "Station entrance screen", "location": "Bangladesh Railway stations", "size": "Large LED", "text": "Schedule and advertising LED above the main entrance, seen by everyone arriving at the station.", "thumb": "assets/img/station-1.webp", "gallery": ["assets/img/station-1.webp"], "link": "", "video": "", "logo": "", "demo": true },
+      { "id": "w-st-2", "category": "station", "title": "Concourse screens", "location": "Bangladesh Railway stations", "size": "Large LED", "text": "Screens in the main hall where passengers wait and check the timetable.", "thumb": "assets/img/station-3.webp", "gallery": ["assets/img/station-3.webp", "assets/img/station-2.webp", "assets/img/station-8.webp"], "link": "", "video": "", "logo": "", "demo": true },
+      { "id": "w-st-3", "category": "station", "title": "Ticket counter screens", "location": "Bangladesh Railway stations", "size": "Large LED", "text": "Positioned over the ticket counters, where queues give your ad long dwell time.", "thumb": "assets/img/station-9.webp", "gallery": ["assets/img/station-9.webp", "assets/img/station-4.webp"], "link": "", "video": "", "logo": "", "demo": true },
+      { "id": "w-st-4", "category": "station", "title": "Platform screens", "location": "Bangladesh Railway stations", "size": "Small LED", "text": "Screens along the platforms, right where passengers board and alight.", "thumb": "assets/img/station-6.webp", "gallery": ["assets/img/station-6.webp", "assets/img/station-5.webp", "assets/img/station-7.webp"], "link": "", "video": "", "logo": "", "demo": true },
+
+      { "id": "w-ct-1", "category": "city", "title": "Airport Road", "location": "Uttara facing, Dhaka", "size": "Large LED", "text": "LED screen on Airport Road facing Uttara.", "thumb": "assets/img/city-airport-road.webp", "gallery": ["assets/img/city-airport-road.webp"], "link": "", "video": "", "logo": "", "demo": false },
+      { "id": "w-ct-2", "category": "city", "title": "Khilkhet police box", "location": "Airport facing, Dhaka", "size": "Large LED", "text": "LED screen at the Khilkhet police box, facing the airport.", "thumb": "assets/img/city-khilkhet.webp", "gallery": ["assets/img/city-khilkhet.webp"], "link": "", "video": "", "logo": "", "demo": false },
+      { "id": "w-ct-3", "category": "city", "title": "Banani DOHS entrance", "location": "Banani, Dhaka", "size": "Large LED", "text": "LED screen on the entrance path to Banani DOHS.", "thumb": "assets/img/city-banani-dohs.webp", "gallery": ["assets/img/city-banani-dohs.webp"], "link": "", "video": "", "logo": "", "demo": false },
+      { "id": "w-ct-4", "category": "city", "title": "Shoinik Club rail crossing", "location": "Banani facing, Dhaka", "size": "Large LED", "text": "LED screen at the Shoinik Club rail crossing, facing Banani.", "thumb": "assets/img/city-shoinik-club.webp", "gallery": ["assets/img/city-shoinik-club.webp"], "link": "", "video": "", "logo": "", "demo": false },
+      { "id": "w-ct-5", "category": "city", "title": "Kamalapur Stadium", "location": "Opposite, underpass facing, Dhaka", "size": "Large LED", "text": "LED screen opposite Kamalapur Stadium, facing the underpass.", "thumb": "assets/img/city-kamalapur.webp", "gallery": ["assets/img/city-kamalapur.webp"], "link": "", "video": "", "logo": "", "demo": false },
+      { "id": "w-ct-6", "category": "city", "title": "New Market junction", "location": "Chattogram", "size": "Large LED", "text": "LED screen at Chattogram's New Market junction.", "thumb": "assets/img/city-ctg-new-market.webp", "gallery": ["assets/img/city-ctg-new-market.webp"], "link": "", "video": "", "logo": "", "demo": false },
+      { "id": "w-ct-7", "category": "city", "title": "Tiger Pass junction", "location": "Chattogram", "size": "Large LED", "text": "LED screen at Tiger Pass, shown by day and by night.", "thumb": "assets/img/city-ctg-tiger-pass-night.webp", "gallery": ["assets/img/city-ctg-tiger-pass-night.webp", "assets/img/city-ctg-tiger-pass.webp"], "link": "", "video": "", "logo": "", "demo": false },
+      { "id": "w-ct-8", "category": "city", "title": "Lalkhan Bazar", "location": "Elevated view, Chattogram", "size": "Large LED", "text": "LED screen at Lalkhan Bazar, beside the elevated expressway.", "thumb": "assets/img/city-ctg-lalkhan-bazar.webp", "gallery": ["assets/img/city-ctg-lalkhan-bazar.webp"], "link": "", "video": "", "logo": "", "demo": false },
+
+      { "id": "w-bb-1", "category": "billboard", "title": "Before Radisson Blu Hotel", "location": "Airport Road, Dhaka", "size": "1 × 30 × 20 ft", "text": "Illuminated billboard (600 sq ft) on the approach to the Radisson Blu Hotel.", "thumb": "assets/img/bb-radisson.webp", "gallery": ["assets/img/bb-radisson.webp"], "link": "", "video": "", "logo": "", "demo": false },
+      { "id": "w-bb-2", "category": "billboard", "title": "Khilkhet passenger shelter", "location": "Khilkhet, Dhaka", "size": "1 × 40 × 10 ft", "text": "Illuminated billboard (400 sq ft) beside the Khilkhet passenger shelter.", "thumb": "assets/img/bb-khilkhet.webp", "gallery": ["assets/img/bb-khilkhet.webp"], "link": "", "video": "", "logo": "", "demo": false },
+      { "id": "w-bb-3", "category": "billboard", "title": "Opposite Le Méridien", "location": "Along the rail line, Dhaka", "size": "1 × 30 × 20 ft", "text": "Illuminated billboard (600 sq ft) opposite the Le Méridien hotel, along the rail line.", "thumb": "assets/img/bb-le-meridien.webp", "gallery": ["assets/img/bb-le-meridien.webp"], "link": "", "video": "", "logo": "", "demo": false },
+      { "id": "w-bb-4", "category": "billboard", "title": "Opposite Third Terminal", "location": "Along the rail line, Dhaka", "size": "1 × 30 × 20 ft", "text": "Illuminated billboard (600 sq ft) opposite the airport's Third Terminal, along the rail line.", "thumb": "assets/img/bb-third-terminal.webp", "gallery": ["assets/img/bb-third-terminal.webp"], "link": "", "video": "", "logo": "", "demo": false },
+      { "id": "w-bb-5", "category": "billboard", "title": "Opposite Army Golf Club", "location": "Before Sheora bus stand, Dhaka", "size": "1 × 30 × 20 ft", "text": "On the left after descending Kuril Flyover, just before Sheora bus stand.", "thumb": "assets/img/bb-army-golf-club.webp", "gallery": ["assets/img/bb-army-golf-club.webp"], "link": "", "video": "", "logo": "", "demo": false },
+      { "id": "w-bb-6", "category": "billboard", "title": "Under the Elevated Expressway", "location": "Banani Railway Station to Banani Flyover", "size": "4 × 15 × 10 ft", "text": "Four illuminated billboards beneath the Elevated Expressway.", "thumb": "assets/img/bb-banani-expressway.webp", "gallery": ["assets/img/bb-banani-expressway.webp"], "link": "", "video": "", "logo": "", "demo": false },
+      { "id": "w-bb-7", "category": "billboard", "title": "BRTC Kuril counter", "location": "Kuril, Dhaka", "size": "1 × 30 × 20 ft", "text": "Illuminated billboard facing both northbound and southbound traffic.", "thumb": "assets/img/bb-kuril.webp", "gallery": ["assets/img/bb-kuril.webp"], "link": "", "video": "", "logo": "", "demo": false },
+      { "id": "w-bb-8", "category": "billboard", "title": "Banani rail line", "location": "West of the tracks from Banani Flyover", "size": "3 × 30 × 20 ft", "text": "Three illuminated billboards in a row on the western side of the railway tracks.", "thumb": "assets/img/bb-banani-rail.webp", "gallery": ["assets/img/bb-banani-rail.webp"], "link": "", "video": "", "logo": "", "demo": false },
+      { "id": "w-bb-9", "category": "billboard", "title": "Airport Railway Station", "location": "Above the station, road facing", "size": "50 × 10 ft / 30 × 10 ft", "text": "Two billboards above Airport Railway Station, facing the road.", "thumb": "assets/img/bb-airport-station-1.webp", "gallery": ["assets/img/bb-airport-station-1.webp", "assets/img/bb-airport-station-2.webp"], "link": "", "video": "", "logo": "", "demo": false },
+      { "id": "w-bb-10", "category": "billboard", "title": "Tiger Pass billboard", "location": "Chattogram", "size": "1 × 30 × 20 ft", "text": "Illuminated billboard (600 sq ft) at Tiger Pass.", "thumb": "assets/img/bb-ctg-tiger-pass.webp", "gallery": ["assets/img/bb-ctg-tiger-pass.webp"], "link": "", "video": "", "logo": "", "demo": false },
+      { "id": "w-bb-11", "category": "billboard", "title": "Tiger Pass to Lalkhan Bazar", "location": "Chattogram", "size": "16 light boxes, 6 × 8 ft", "text": "A run of 16 light boxes along the road from Tiger Pass to Lalkhan Bazar.", "thumb": "assets/img/lb-lalkhan-1.webp", "gallery": ["assets/img/lb-lalkhan-1.webp", "assets/img/lb-lalkhan-2.webp"], "link": "", "video": "", "logo": "", "demo": false },
+
+      { "id": "w-hw-1", "category": "highway", "title": "Dhaka–Sirajganj highway", "location": "Elenga to Ibrahimabad, both facings", "size": "6 × 30 × 20 ft", "text": "Six billboards on the approach to the Jamuna Bridge, facing both directions.", "thumb": "assets/img/hw-sirajganj-1.webp", "gallery": ["assets/img/hw-sirajganj-1.webp", "assets/img/hw-sirajganj-2.webp", "assets/img/hw-sirajganj-3.webp", "assets/img/hw-sirajganj-4.webp"], "link": "", "video": "", "logo": "", "demo": false },
+      { "id": "w-hw-2", "category": "highway", "title": "Ibrahimabad Railway Station", "location": "Jamuna Bridge, both facings", "size": "2 × 30 × 20 ft", "text": "Two billboards at Ibrahimabad Railway Station by the Jamuna Bridge.", "thumb": "assets/img/hw-ibrahimabad-3.webp", "gallery": ["assets/img/hw-ibrahimabad-3.webp", "assets/img/hw-ibrahimabad-1.webp", "assets/img/hw-ibrahimabad-2.webp", "assets/img/hw-ibrahimabad-4.webp"], "link": "", "video": "", "logo": "", "demo": false },
+      { "id": "w-hw-3", "category": "highway", "title": "Dhaka–Natore highway", "location": "Both facings", "size": "2 × 30 × 20 ft", "text": "Two billboards on the Dhaka–Natore highway.", "thumb": "assets/img/hw-natore-1.webp", "gallery": ["assets/img/hw-natore-1.webp", "assets/img/hw-natore-2.webp"], "link": "", "video": "", "logo": "", "demo": false },
+      { "id": "w-hw-4", "category": "highway", "title": "Dhaka–Rangpur highway", "location": "Both facings", "size": "1 × 30 × 20 ft", "text": "Billboard on the Dhaka–Rangpur highway.", "thumb": "assets/img/hw-rangpur.webp", "gallery": ["assets/img/hw-rangpur.webp"], "link": "", "video": "", "logo": "", "demo": false },
+      { "id": "w-hw-5", "category": "highway", "title": "Ullapara rail crossing", "location": "Dhaka–Rangpur highway", "size": "1 × 30 × 20 ft", "text": "Billboard at the Ullapara rail crossing.", "thumb": "assets/img/hw-ullapara.webp", "gallery": ["assets/img/hw-ullapara.webp"], "link": "", "video": "", "logo": "", "demo": false },
+
+      { "id": "w-tr-1", "category": "train", "title": "Full train body wrap", "location": "Commuter & mail trains, any route", "size": "10–15 train bodies", "text": "Complete outside body branding in premium outdoor-grade vinyl.", "thumb": "assets/img/train-6.webp", "gallery": ["assets/img/train-6.webp", "assets/img/train-1.webp", "assets/img/train-2.webp", "assets/img/train-5.webp"], "link": "", "video": "", "logo": "", "demo": true },
+      { "id": "w-tr-2", "category": "train", "title": "Livery concepts", "location": "Commuter & mail trains", "size": "Full body", "text": "Design directions for full-length train livery.", "thumb": "assets/img/train-7.webp", "gallery": ["assets/img/train-7.webp", "assets/img/train-3.webp", "assets/img/train-4.webp", "assets/img/train-before.webp"], "link": "", "video": "", "logo": "", "demo": true },
+      { "id": "w-tr-3", "category": "train", "title": "Seat covers & seat-back stickers", "location": "Inside express trains", "size": "2,000 covers · 1,000 stickers", "text": "Branded seat covers and seat-back stickers, washed and maintained by us.", "thumb": "assets/img/seat-covers.webp", "gallery": ["assets/img/seat-covers.webp"], "link": "", "video": "", "logo": "", "demo": true }
+    ]
+  },
+  "process": {
+    "eyebrow": "How it works",
+    "title": "Simple process. *Bright results.*",
+    "steps": [
+      { "id": "st1", "title": "Choose your media", "text": "Pick stations, screens, billboards or trains, and your peak or off-peak slots." },
+      { "id": "st2", "title": "Confirm & approve", "text": "Sign the agreement, pay the advance and approve your artwork." },
+      { "id": "st3", "title": "We produce & install", "text": "We handle production and installation. LED screens are ready to display." },
+      { "id": "st4", "title": "Live, lit & looked after", "text": "Your brand stays visible 24/7 while we take care of maintenance." }
+    ]
+  },
+  "terms": {
+    "eyebrow": "Terms in brief",
+    "title": "Clear terms. *No surprises.*",
+    "text": "The essentials of how we work. The full terms are set out in your agreement.",
+    "buttonLabel": "Request the rate card",
+    "items": [
+      { "id": "t1", "q": "How long is the contract?", "a": "All media is offered on a one (01) year rental basis. Renewal for the next year is confirmed before the first-year display period ends (for train branding, at least three months before expiry)." },
+      { "id": "t2", "q": "What are the screen hours?", "a": "Peak hours run 7am–1pm and 5pm–11pm (12 hours). Off-peak runs 1pm–5pm (4 hours). The video loop is planned together with you." },
+      { "id": "t3", "q": "How does payment work?", "a": "An advance is paid on confirmation: 40% for LED screens, 60% for train body branding (the balance in two equal instalments) and 50% for seat cover branding. The balance follows the agreed schedule." },
+      { "id": "t4", "q": "Are VAT and AIT included?", "a": "Yes. Quoted rates include 15% VAT and 4% AIT as applicable under the laws of Bangladesh." },
+      { "id": "t5", "q": "Who handles production and maintenance?", "a": "LED screens are ready to display and maintenance materials are provided by us. For train branding, artwork adaptation, printing, transport and the first installation are included, with a six-month warranty on stickers. Seat covers are washed and refitted four times a month." },
+      { "id": "t6", "q": "What about government compliance?", "a": "All media follows the rules and directives of Bangladesh Railway, the Ministry of Railways and the Government of Bangladesh. Any directive from the authorities is implemented accordingly." }
+    ]
+  },
+  "team": {
+    "eyebrow": "Leadership",
+    "title": "The people *behind the light.*",
+    "people": [
+      { "id": "pp1", "name": "Gazi Gaffar", "role": "Director", "photo": "", "quote": "We look forward to establishing a successful long-term partnership with you." }
+    ],
+    "groupTitle": "Consortium members",
+    "group": [
+      { "id": "g1", "name": "SHAKHAOUTH Enterprise" },
+      { "id": "g2", "name": "ALAM Enterprise" },
+      { "id": "g3", "name": "M A Enterprise" }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "titleLines": ["Let's put your brand", "*in the spotlight.*"],
+    "text": "Tell us which media you're interested in and we'll share availability and the current rate card.",
+    "phone": "+8801710977704",
+    "phoneDisplay": "01710-977704",
+    "whatsapp": "8801710977704",
+    "whatsappMessage": "Hello Bright Consortium, I'd like to know more about your advertising media.",
+    "email": "gazigaffarinfo.smtl@gmail.com",
+    "address": "House 125, Road 2, Block A, Niketan, Gulshan, Dhaka",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=House+125+Road+2+Block+A+Niketan+Gulshan+Dhaka",
+    "formEndpoint": "",
+    "formTitle": "Send an enquiry",
+    "formSuccess": "Thank you. We'll get back to you shortly.",
+    "interests": ["Station LED", "City LED", "Billboards", "Highway billboards", "Train body branding", "Seat cover branding"]
+  },
+  "footer": {
+    "text": "Premium illuminated advertising across Bangladesh's railway stations, trains, city junctions and highways.",
+    "copyright": "Bright Consortium Ltd. All rights reserved."
+  }
+}
